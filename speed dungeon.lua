@@ -53,15 +53,15 @@ function _draw()
 	pal()
 	map(mapx,mapy,0,0,16,16)
 
-    print("Timer: " .. flr(remaining_time), 8, 8, 7)
-	print("Level: " .. flr(LevelIndex), 70, 8, 11)
+    print("timer: " .. flr(remaining_time), 8, 8, 7)
+	print("level: " .. flr(LevelIndex), 70, 8, 11)
 	doshake()
 	
 
 	if game_over then
-        print("Game Over!", 45, 60, 8)
+        print("game Over!", 45, 60, 8)
 	elseif game_won then
-		print("Game Won!!!", 45, 60, 11)
+		print("game Won!!!", 45, 60, 11)
 	end
 end
 
